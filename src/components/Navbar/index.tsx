@@ -3,7 +3,7 @@ import styles from "./styles.module.scss";
 export function Navbar() {
   return (
     <div className={styles.containerNavbar}>
-      <img src="/logo.png" alt="" />
+      <a href="/"><img src="/logo.png" alt="" /></a>
 
       {/*navbar com mais itens para um futuro projeto*/}
       <nav>

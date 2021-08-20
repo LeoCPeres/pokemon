@@ -83,7 +83,7 @@ export function Card({ url }: CardProps) {
               {pokemon.stats.map((item) => {
                 return (
                   <>
-                    {item.stat.name == "attack" && (
+                    {item.stat.name === "attack" && (
                       <div className={styles.attack}>
                         <div className={styles.circle}>
                           <p>{item.base_stat}</p>
@@ -95,7 +95,7 @@ export function Card({ url }: CardProps) {
                       </div>
                     )}
 
-                    {item.stat.name == "defense" && (
+                    {item.stat.name === "defense" && (
                       <div className={styles.defense}>
                         <div className={styles.circle}>
                           <p>{item.base_stat}</p>
@@ -115,109 +115,109 @@ export function Card({ url }: CardProps) {
               {pokemon.types.map((type) => {
                 return (
                   <>
-                    {type.type.name == "water" && (
+                    {type.type.name === "water" && (
                       <div className={styles.water}>
                         <p>{type.type.name}</p>
                       </div>
                     )}
 
-                    {type.type.name == "ice" && (
+                    {type.type.name === "ice" && (
                       <div className={styles.ice}>
                         <p>{type.type.name}</p>
                       </div>
                     )}
 
-                    {type.type.name == "fire" && (
+                    {type.type.name === "fire" && (
                       <div className={styles.fire}>
                         <p>{type.type.name}</p>
                       </div>
                     )}
 
-                    {type.type.name == "dragon" && (
+                    {type.type.name === "dragon" && (
                       <div className={styles.dragon}>
                         <p>{type.type.name}</p>
                       </div>
                     )}
 
-                    {type.type.name == "fighting" && (
+                    {type.type.name === "fighting" && (
                       <div className={styles.dragon}>
                         <p>{type.type.name}</p>
                       </div>
                     )}
 
-                    {type.type.name == "bug" && (
+                    {type.type.name === "bug" && (
                       <div className={styles.bug}>
                         <p>{type.type.name}</p>
                       </div>
                     )}
 
-                    {type.type.name == "grass" && (
+                    {type.type.name === "grass" && (
                       <div className={styles.grass}>
                         <p>{type.type.name}</p>
                       </div>
                     )}
 
-                    {type.type.name == "electric" && (
+                    {type.type.name === "electric" && (
                       <div className={styles.electric}>
                         <p>{type.type.name}</p>
                       </div>
                     )}
 
-                    {type.type.name == "ground" && (
+                    {type.type.name === "ground" && (
                       <div className={styles.ground}>
                         <p>{type.type.name}</p>
                       </div>
                     )}
 
-                    {type.type.name == "stile" && (
+                    {type.type.name === "stile" && (
                       <div className={styles.stile}>
                         <p>{type.type.name}</p>
                       </div>
                     )}
 
-                    {type.type.name == "dark" && (
+                    {type.type.name === "dark" && (
                       <div className={styles.dark}>
                         <p>{type.type.name}</p>
                       </div>
                     )}
 
-                    {type.type.name == "rock" && (
+                    {type.type.name === "rock" && (
                       <div className={styles.rock}>
                         <p>{type.type.name}</p>
                       </div>
                     )}
 
-                    {type.type.name == "normal" && (
+                    {type.type.name === "normal" && (
                       <div className={styles.normal}>
                         <p>{type.type.name}</p>
                       </div>
                     )}
 
-                    {type.type.name == "gosth" && (
+                    {type.type.name === "gosth" && (
                       <div className={styles.gosth}>
                         <p>{type.type.name}</p>
                       </div>
                     )}
 
-                    {type.type.name == "poison" && (
+                    {type.type.name === "poison" && (
                       <div className={styles.poison}>
                         <p>{type.type.name}</p>
                       </div>
                     )}
 
-                    {type.type.name == "psychic" && (
+                    {type.type.name === "psychic" && (
                       <div className={styles.psychic}>
                         <p>{type.type.name}</p>
                       </div>
                     )}
 
-                    {type.type.name == "fairy" && (
+                    {type.type.name === "fairy" && (
                       <div className={styles.fairy}>
                         <p>{type.type.name}</p>
                       </div>
                     )}
 
-                    {type.type.name == "ghost" && (
+                    {type.type.name === "ghost" && (
                       <div className={styles.ghost}>
                         <p>{type.type.name}</p>
                       </div>
