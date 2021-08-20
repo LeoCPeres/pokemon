@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, FormEvent } from "react";
 import { Card } from "../../components/Card";
 import { api } from "../../services/api";
 import styles from "./styles.module.scss";
@@ -22,7 +22,9 @@ export function Home() {
 
   const inputRef = useRef<HTMLInputElement>(null);
 
-  function handleSearch() {
+  function handleSearch(event: FormEvent) {
+    event.preventDefault();
+
     if (inputRef.current?.value !== undefined) {
       const pokemonName = inputRef.current.value.toLowerCase();
       const newPokemons = pokemons.filter((pokemon) =>
@@ -38,7 +40,7 @@ export function Home() {
   }
 
   function handleClearSearch() {
-    setPerPage(20);
+    setPerPage(21);
     setSearchedPokemons(pokemons);
     if (inputRef.current?.value !== undefined) {
       inputRef.current.value = "";
@@ -52,7 +54,7 @@ export function Home() {
           +800 <strong>Pokémons</strong> for you choose your favorite
         </span>
 
-        <div className={styles.searchBar}>
+        <form className={styles.searchBar}>
           <input
             type="text"
             name=""
@@ -62,10 +64,10 @@ export function Home() {
           />
 
           <div>
-            <button onClick={handleSearch}>Buscar</button>
-            <button onClick={handleClearSearch}>Limpar</button>
+            <button type="submit" onClick={handleSearch}>Buscar</button>
+            <button type="button" onClick={handleClearSearch}>Limpar</button>
           </div>
-        </div>
+        </form>
 
         <div className={styles.cardsContainer}>
           {searchedPokemons.map((pokemon, index) => {
