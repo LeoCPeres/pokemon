@@ -9,16 +9,16 @@ export function Navbar() {
       <nav>
         <ul>
           <li>
-            <a href="#">Home</a>
+            <a href="/">Home</a>
           </li>
           <li>
-            <a href="#">Pokédex</a>
+            <a href="/">Pokédex</a>
           </li>
           <li>
-            <a href="#">Legendaries</a>
+            <a href="/">Legendaries</a>
           </li>
           <li>
-            <a href="#">Documentation</a>
+            <a href="/">Documentation</a>
           </li>
         </ul>
       </nav>

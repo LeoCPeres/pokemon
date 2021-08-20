@@ -74,7 +74,7 @@ export function Home() {
             if (index < perPage) {
               return <Card key={pokemon.name} url={pokemon.url} />;
             }
-            return;
+
           })}
         </div>
         {searchedPokemons.length > 21 && (
